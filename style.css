@@ -52,6 +52,7 @@ aside{
 header{
     grid-area: header;
     border-bottom: solid black 1px;
+     animation: slideDown 2s ease-out;
 }
 
 nav{
@@ -97,4 +98,14 @@ footer::before{
     background-size: contain;
     background-repeat: no-repeat;
     
+}
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
